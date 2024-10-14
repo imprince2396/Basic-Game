@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Game</title>
+</head>
+<body>
+    <h1 class="heading">Stone Paper Scissor Game</h1>
+    <div class="cricket-button">
+    <button  id="stone" onclick="console.log('you have chosen stone.');
+    let answer=Math.random()*3;
+    if(answer>0 && answer<=1){
+        console.log('computer has chosen paper.');
+    alert('You have chosen stone🪨, and the computer has chosen paper📃, so the computer is the winner.');
+}
+    else if(answer>1 && answer<=2){
+        console.log('computer has chosen stone.');
+        alert('You chose stone🪨, and the computer also chose stone🪨, so its a draw.');
+    }
+    else{
+        console.log('computer has chosen scissor.')
+        alert('You have chosen stone🪨, and the computer has chosen scissor✂️, so you are the winner.');
+    }">Stone</button>
+    <button id="Paper" onclick="console.log('you have chosen paper.');
+     let answer2=Math.random()*3;
+    if(answer2>0 && answer2<=1){
+        console.log('computer has chosen scissor.');
+    alert('You have chosen paper📃, and the computer has chosen scissor✂️, so the computer is the winner.');
+}
+    else if(answer2>1 && answer2<=2){
+        console.log('computer has chosen paper.');
+        alert('You chose paper📃, and the computer also chose paper📃, so its a draw.');
+    }
+    else{
+        console.log('computer has chosen stone.');
+        alert('You have chosen paper📃, and the computer has chosen stone🪨, so you are the winner.');
+    }">Paper</button>
+    <button id="Scissor" onclick="console.log('you have chosen scissor.');
+     let answer3=Math.random()*3;
+    if(answer3>0 && answer3<=1){
+        console.log('computer has chosen stone.');
+    alert('You have chosen scissor✂️, and the computer has chosen stone🪨, so the computer is the winner.');
+}
+    else if(answer3>1 && answer3<=2){
+        console.log('computer has chosen scissor.')
+        alert('You chose scissor✂️, and the computer also chose scissor✂️, so its a draw.');
+    }
+    else{
+        console.log('computer has chosen paper.');
+        alert('You have chosen scissor✂️, and the computer has chosen paper📃, so you are the winner.');
+    }">Scissor</button>
+    </div>
+    <div class="photo">
+        <img src="images/rock.jpeg">
+        <img src="images/scissor.jpeg">
+        <img src="images/stone.jpeg">
+    </div>
+    
+</body>
+</html>
